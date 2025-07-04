@@ -1,0 +1,66 @@
+/* Footer Styles */
+.footer {
+    background-color: white;  /* White background */
+    padding: 20px 0;  /* Space around the content */
+    text-align: center;  /* Center align text */
+    border-radius: 0;  /* Remove rounded corners, making it square */  /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-top: 50px;  /* Space from content above */
+}
+
+/* Social Icons Section */
+.social-icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon__item {
+    margin: 0 15px;
+}
+
+.social-icon__link {
+    color: black;  /* Black color for icons */
+    font-size: 30px;  /* Set icon size */
+    transition: color 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+.social-icon__link:hover {
+    color: #3b5998;  /* Hover color (e.g., Facebook blue) */
+}
+
+/* Menu Section */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu__item {
+    margin: 0 15px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: black;  /* Black color for links */
+    font-weight: bold;
+    font-size: 1.5rem;  /* Font size for links */
+    transition: color 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+.menu__link:hover {
+    color: black;  /* Hover color for menu items */
+}
+
+
+/* Copyright Section */
+footer p {
+    font-size: 14px;
+    color: black;  /* Lighter text color for copyright */
+    font-weight: bold;
+    margin-top: 20px;
+}

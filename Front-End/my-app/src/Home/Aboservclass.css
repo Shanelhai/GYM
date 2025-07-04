@@ -1,0 +1,166 @@
+/* About Section */
+.About {
+    padding: 50px 20px;
+    background-color: white; /* Light gray background */
+    text-align: center;
+    margin-top: 50px;
+    max-width: 900px; /* Limit the width for better readability */
+    margin: 50px auto; /* Center the container horizontally */
+}
+
+.About h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px; /* Spacing between h2 and p */
+    text-align: center; /* Ensures the heading is centered */
+}
+
+.About p {
+    font-size: 1.5rem;
+    color: black;
+    max-width: 800px; /* Set a max width for readability */
+    margin: 0 auto; /* Center the paragraph */
+    margin-top: 0; /* No top margin */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.service-card p {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-button {
+    background-color: white; /* Set a base background color */
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase the size of the button */
+}
+
+/* Optional: Adding active effect when the button is clicked */
+.service-button:active {
+    transform: scale(0.98); /* Button shrinks a little when clicked */
+}
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 15px;
+        margin-top: 50px;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .services {
+        padding: 30px 15px;
+        margin-top: 50px;
+    }
+
+    .service-card {
+        max-width: 90%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .about {
+        padding: 20px 10px;
+        margin-top: 30px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .services {
+        padding: 20px 10px;
+        margin-top: 30px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+}

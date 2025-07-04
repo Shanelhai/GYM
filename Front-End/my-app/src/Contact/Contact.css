@@ -1,0 +1,102 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allows the form and image to stack on smaller screens */
+}
+
+.form-container {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 300px; /* Ensures the form is not too small on smaller screens */
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f8f; /* Gives a darker shade when button is pressed */
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    max-width: 500px; /* Restricts image container width */
+    max-height: 500px; /* Keeps image size consistent */
+    object-fit: cover; /* Makes sure the image fits well in the container */
+    margin-top: 20px; /* Adds some space between form and image */
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stacks form and image vertically on smaller screens */
+    }
+
+    .form-container {
+        padding-right: 0; /* Removes padding on small screens */
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container input,
+    .form-container textarea {
+        padding: 8px; /* Smaller padding for smaller screens */
+    }
+
+    button {
+        padding: 8px 12px; /* Slightly smaller button padding */
+    }
+}

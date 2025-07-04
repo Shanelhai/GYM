@@ -1,0 +1,180 @@
+  /* Header Styling */
+  .main-heading {
+    font-size: 2.5rem;
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  hr {
+    width: 100%;
+    margin: 20px auto;
+    border: 2px solid black;
+  }
+  
+  /* Menu Container Styling */
+  .menu-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .menu-tab button {
+    background-color: red;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-tab button:hover {
+    background-color: #e6a800;
+  }
+  
+  .menu-tab button:focus {
+    outline: none;
+  }
+  
+  /* Gallery Styling */
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .exercise-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .exercise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .exercise-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .exercise-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 15px;
+    color: black;
+  }
+  
+  .exercise-category {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0 15px;
+  }
+  
+  .exercise-description {
+    font-size: 1.5rem;
+    color: black;
+    margin: 15px;
+    line-height: 1.5;
+  }
+  
+  .youtube-link {
+    display: block;
+    text-align: center;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .youtube-link:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 2rem;
+    }
+  
+    .menu-container {
+      margin-top: 20px;
+    }
+  
+    .menu-tab button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 5px;
+    }
+  
+    .gallery-container {
+      padding: 10px;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+  
+    .exercise-card {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .exercise-name {
+      font-size: 1.4rem;
+    }
+  
+    .exercise-description {
+      font-size: 0.9rem;
+    }
+  
+    .youtube-link {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-heading {
+      font-size: 1.8rem;
+    }
+  
+    .menu-tab button {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  
+    .exercise-card {
+      margin-bottom: 20px;
+    }
+  
+    .youtube-link {
+      font-size: 0.9rem;
+    }
+  }
+  
