@@ -3,6 +3,13 @@ Welcome to the Aura Fitness Club website repository – where fitness meets pass
 
 This project is a modern, responsive website for Aura Fitness Club, a gym dedicated to helping individuals reach their physical, mental, and emotional wellness goals through expert guidance, community support, and top-of-the-line equipment.
 
+![image alt](https://github.com/Shanelhai/GYM/blob/40b79b007ca61b55d4480ef05ff278b92478266d/1.PNG)
+
+![image alt](https://github.com/Shanelhai/GYM/blob/40b79b007ca61b55d4480ef05ff278b92478266d/2.PNG)
+
+![image alt](https://github.com/Shanelhai/GYM/blob/40b79b007ca61b55d4480ef05ff278b92478266d/3.PNG)
+
+![image alt](https://github.com/Shanelhai/GYM/blob/40b79b007ca61b55d4480ef05ff278b92478266d/4.PNG)
 🔍 Overview
 The website provides visitors with key information about Aura Fitness Club, including:
 
